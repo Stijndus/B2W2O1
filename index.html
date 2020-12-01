@@ -7,8 +7,18 @@
     <title>Document</title>
 </head>
 <body>
-    <img id="duck" src="img/duck.gif" alt="duck">
-    <div id="stage"></div>
+    <div class="OOF"><h2>Hit</h2> <span id="hit">0</span></div>
+    <div class="OOF"><h2>Miss</h2> <span id="miss">0</span></div>
+    <img id="duck" src="img/duck.gif" alt="duck" onclick="score(0)">
+    <div id="stage" onclick="score(1)"></div>
     <script src="script.js"></script>
+    <div id="win" class="d-none">
+        <h1>You won</h1>
+        <button onclick="restart()">restart</button>
+    </div>
+    <div id="lose" class="d-none">
+        <h1>You lost</h1>
+        <button onclick="restart()">restart</button>
+    </div>
 </body>
 </html>
